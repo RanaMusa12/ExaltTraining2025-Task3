@@ -1,0 +1,47 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width:480px) {
+
+    ul {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}
+
+@media (max-width:780px) {
+
+    ul {
+        margin-left: 200px;
+
+    }
+}
+
+@media (max-width:540px) {
+
+    ul {
+        margin-left: 60px;
+
+    }
+}
+
+@media (max-width:380px) {
+
+    ul {
+        margin-left: 0;
+
+    }
+}
+
+
+@media (max-width:912px) {
+
+    ul {
+
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}

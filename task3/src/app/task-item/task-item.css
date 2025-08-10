@@ -1,0 +1,97 @@
+article {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 400px;
+    height: max-content;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 15px #a5a4a4;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+article:hover {
+
+    transition: box-shadow 0.3s ease-in-out;
+
+    button {
+        display: inline-block;
+        background-color: #000000;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        color: #ffffff;
+        border-radius: 5px;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        margin-right: 10px;
+    }
+
+    .delete-button {
+        color: red;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #666666;
+}
+
+button {
+
+    display: none;
+}
+
+.future-task {
+    background-color: #d7ace2;
+
+    hr {
+        border: 1px solid #971db6;
+    }
+
+}
+
+.future-task:hover {
+    box-shadow: 0 0 40px #971db6;
+}
+
+.today-task {
+    background-color: #a8c2fc;
+
+    hr {
+        border: 1px solid #1d4b97;
+    }
+
+}
+
+.today-task:hover {
+    box-shadow: 0 0 40px #1d4b97;
+}
+
+.past-task {
+    background-color: #f8b1b1;
+
+    hr {
+        border: 1px solid #971d1d;
+    }
+}
+
+.past-task:hover {
+    box-shadow: 0 0 40px #971d1d;
+}
+
+@media (max-width: 480px) {
+    article {
+        width: 270px;
+        margin: auto;
+    }
+}

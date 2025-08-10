@@ -1,0 +1,12 @@
+<header>
+    <h1 id="title">Create a new Event</h1>
+    <a id="newEventBtn" [routerLink]="['/tasks/new']" class="hidden" (click)="changeTitle2()">+ New Event</a>
+</header>
+
+
+
+
+<div class="sidebar">
+    <a [routerLink]="['/tasks/all']" routerLinkActive="router-link-active" (click)="changeTitle()">All tasks →</a>
+    <a [routerLink]="['/tasks/new']" (click)="changeTitle2()">Fill an event →</a>
+</div>

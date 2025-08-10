@@ -1,0 +1,11 @@
+<article [class]="color">
+    <div class="task-item">
+        <h2>{{ task().title }}</h2>
+        <p>{{ task().description }}</p>
+        <hr>
+        <p>{{ task().date | date:'medium' }}</p>
+
+        <button (click)="onDelete()" class="delete-button">Delete</button>
+        <button (click)="onEdit(task().id)">Edit</button>
+    </div>
+</article>
